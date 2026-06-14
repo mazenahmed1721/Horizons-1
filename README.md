@@ -10,9 +10,9 @@
 * CSS
 * JavaScript
 
-** Demo **
+## Demo
 
-* demo.gif
+![Demo](demo.gif)
 
 ** Live Website **
 
