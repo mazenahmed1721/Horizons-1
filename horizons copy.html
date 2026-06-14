@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="description of content">
+<title>This is the first template</title>
+
+<style>
+/* ================= NORMALIZE (مكرر عندك فخليته مرة واحدة) ================= */
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+a {
+  background-color: transparent;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+/* ================= YOUR CSS ================= */
+
+/* start main rule */
+body {
+  height: 4000px;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* end main rule */
+
+/* utilities */
+.fl-left { float: left; }
+.text-center { text-align: center; }
+
+.my-button {
+  background: none;
+  color: #2dcc70;
+  border: 3px solid #2dcc70;
+  padding: 10px 30px;
+  font-weight: bold;
+}
+
+/* ================= HEADER ================= */
+
+.header .slider {
+  background-color: #FFFFFF;
+  height: 600px;
+  background-image: url('images/2.jpg');
+  background-size: cover;
+}
+
+.header .slider .intro {
+  margin: 0;
+  height: 600px;
+  color: #a2c3c8;
+  padding-top: 200px;
+}
+
+.header .slider .intro h2 {
+  margin: 122px auto;
+  font-size: 50px;
+  width: 600px;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  padding: 5px 0;
+}
+
+.header .slider .intro button {
+  background: none;
+  margin-top: 30px;
+  font-size: 20px;
+  border: 2px solid #fff;
+  font-weight: bold;
+  padding: 10px 30px;
+}
+
+/* navbar */
+.header .navbar {
+  background-color: #252f31;
+  color: #fff;
+  overflow: hidden;
+}
+
+.header .navbar h2 span {
+  color: #207220;
+}
+
+.header .navbar ul {
+  list-style: none;
+  padding-left: 0;
+  overflow: hidden;
+  float: right;
+}
+
+.header .navbar ul li {
+  float: left;
+  padding: 10px;
+}
+
+.header .navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header .navbar ul li.active a,
+.header .navbar ul li a:hover {
+  color: #259E25;
+}
+
+/* ================= FEATURES ================= */
+
+.features {
+  overflow: hidden;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.features .feat {
+  width: 33.33333%;
+  float: left;
+  height: 150px;
+}
+
+.features .feat h2 {
+  color: #555;
+  font-weight: bold;
+}
+
+.features .feat p {
+  line-height: 1.5;
+  color: #888;
+  padding: 0px 5px 0px 0px;
+}
+
+/* ================= ABOUT ME ================= */
+
+.about-me {
+  background: #f2f2f2;
+  overflow: hidden;
+}
+
+.about-me .image {
+  width: 40%;
+}
+
+.about-me .image img {
+  width: 85%;
+}
+
+.about-me .info {
+  width: 60%;
+}
+
+.about-me .info h2 {
+  margin: 40px 0px 20px 40px;
+  color: #555;
+}
+
+.about-me .info > p {
+  margin: 0 0 10px 40px;
+}
+
+.about-me .info .p2 {
+  margin-top: 20px;
+  margin-right: 2px;
+}
+
+.about-me .info p {
+  line-height: 1.6;
+  color: #666;
+}
+
+.about-me .info .hobbies {
+  overflow: hidden;
+  margin: 20px 0 0 40px;
+}
+
+.about-me .info .hobbies .content {
+  width: 50%;
+  min-height: 100px;
+  overflow: hidden;
+}
+
+.about-me .info .hobbies .content h3 {
+  color: #555;
+}
+
+.about-me .info .hobbies .content .icon img {
+  max-width: 12%;
+  float: left;
+  margin: 17px 0 0 -7px;
+}
+
+.about-me .info .hobbies .content .text {
+  float: left;
+  width: 88%;
+}
+
+/* ================= SKILLS ================= */
+
+.my-skills {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.my-skills .skills,
+.my-skills .progress {
+  width: 50%;
+}
+
+.my-skills .skills h2 {
+  margin: 25px 0 20px 40px;
+  color: #555;
+}
+
+.my-skills .skills p {
+  margin: 0 0 10px 40px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.my-skills .skills p:last-of-type {
+  margin-top: 25px;
+}
+
+.my-skills .skills button {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.my-skills .progress .tech {
+  margin-left: 50px;
+}
+
+.my-skills .progress .tech h3 {
+  color: #555;
+}
+
+.my-skills .progress .tech div {
+  background-color: #f2f2f2;
+  height: 25px;
+}
+
+.my-skills .progress .tech div span {
+  background-color: #2dcc70;
+  height: 25px;
+  display: block;
+  line-height: 25px;
+  text-align: right;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* ================= RESUME ================= */
+
+.resume {
+  background-color: #f2f2f2;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.resume h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #555;
+}
+
+.resume p {
+  line-height: 1.6;
+  color: #666;
+  padding: 0 40px;
+}
+
+.resume button {
+  margin-top: 20px;
+}
+
+/* ================= EDUCATION ================= */
+
+.my-education {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.my-education .main {
+  float: left;
+  margin-right: 5%;
+  width: 50%;
+}
+
+.my-education .main h2 {
+  margin: 25px 0 20px 40px;
+  color: #555;
+}
+
+.my-education .main p {
+  margin: 0 0 10px 40px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.my-education .exp {
+  float: left;
+  width: 45%;
+  padding-bottom: 71px;
+}
+
+.my-education .exp h3 {
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+
+.my-education .exp span {
+  display: block;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.my-education .exp .span2 {
+  font-weight: bold;
+  display: inline;
+}
+
+.my-education .exp .span3 {
+  background-color: #2dcc70;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.my-education .exp hr {
+  margin: 20px 0;
+  background-color: #999;
+  height: 1px;
+  border: 0;
+}
+
+.my-education .exp p {
+  line-height: 1.7;
+  color: #777;
+}
+
+/* ================= TESTIMONIALS ================= */
+
+.testimonials {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.testimonials q {
+  line-height: 1.7;
+  color: #777;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+
+.testimonials h3 {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.testimonials ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.testimonials ul li {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #2dcc70;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.testimonials ul li.active {
+  background-color: #2dcc70;
+}
+
+/* ================= PORTFOLIO ================= */
+
+.portfolio {
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.portfolio h2 {
+  color: #777;
+}
+
+.portfolio p {
+  line-height: 1.7;
+  color: #666;
+}
+
+.portfolio .our-work {
+  overflow: hidden;
+}
+
+.portfolio .our-work > div {
+  float: left;
+  width: 33.33333%;
+  margin-bottom: 10px;
+}
+
+.portfolio .our-work > div img {
+  width: 92%;
+  margin: 10px;
+  padding: 3px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+/* ================= CONTACT ================= */
+
+.contact {
+  background-color: #252f31;
+  overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.contact .info {
+  width: 50%;
+  margin-right: 5%;
+}
+
+.contact h2 {
+  color: #fff;
+  margin-left: 40px;
+}
+
+.contact p {
+  color: #6a6e71;
+  margin-left: 40px;
+  line-height: 1.7;
+}
+
+.contact p strong {
+  color: #d1d6da;
+}
+
+.contact .form {
+  width: 45%;
+}
+
+.contact .form input,
+.contact .form textarea {
+  background-color: #4b5557;
+  color: #fff;
+  padding: 10px;
+  border: 0;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.contact .form textarea {
+  height: 300px;
+}
+
+.contact .form .contact-me {
+  background-color: #191e22;
+  color: #fff;
+  padding: 10px 50px;
+  border: 0;
+  margin-top: 10px;
+  width: 200px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background-color: #191e22;
+  color: #6a6e71;
+  padding: 20px 0;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 0;
+}
+
+.footer ul li {
+  display: inline-block;
+}
+</style>
+
+</head>
+
+<body>
+   
+        <!--strat header-->
+        
+        <div class="header">
+            <div class="slider">
+                <div class="container">
+                    <div class="intro text-center">
+                        <h2>Web &amp; Graffic Designer</h2>
+                        <button>Learn More</button>
+                    </div>
+                </div> 
+            </div>
+            <div class="navbar">
+                <div class="container">
+                    <h2 class="fl-left">OMAR.<span>Ghonaim</span></h2>
+                    <ul>
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">About us</a> </li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Testemonials</a></li>
+                        <li><a href="#">Portofolio</a></li>
+                        <li><a href="#">Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>   
+        </div>
+        
+        <!--end header-->
+        <!--start features-->
+        
+        <div class="features">
+            <div class="container">
+                <div class="feat fl-left">
+                    <h2>Values</h2>
+                    <p>lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. pute disputando cu est.</p>
+                </div>
+                <div class="feat fl-left">
+                    <h2>Goals</h2>
+                    <p>lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. pute disputando cu est.</p>
+                </div>
+                <div class="feat fl-left">
+                    <h2>Hobbies</h2>
+                    <p>lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. pute disputando cu est.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!--end features-->
+        <!--start about me-->
+        
+        <div class="about-me">
+            <div class="container">
+                <div class="image fl-left">
+                    <img src="images/img.jpg" alt="test">
+                </div>
+                <div class="info fl-left">
+                    <h2>About me</h2>
+                    <p>lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. pute disputando cu est. te usu virtute placerat. pute disputando cu est. te usu virtute placerat. pute disputando cu est. te usu virtute placerat. pute disputando cu est.</p>
+                    <p class="p2">lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. pute disputando cu est.pute disputando cu est. </p>
+                    <div class="hobbies">
+                        <div class="content fl-left">
+                            <!--start about box content-->
+                            <!--start icon div-->
+                            <div class="icon">
+                                <img src="images/web.png">
+                            </div>
+                            <!--end icon div-->
+                            <!--start text div-->
+                            <div class="text">
+                                <h3>Web Design</h3>
+                                <p class="p2">lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam </p>
+                            </div>
+                            <!--end text div-->
+                        </div>
+                        <!--end about box content-->
+                        <div class="content fl-left">
+                            <!--start about box content-->
+                            <!--start icon div-->
+                            <div class="icon">
+                                <img src="images/graffic.jpg">
+                            </div>
+                            <!--end icon div-->
+                            <!--start text div-->
+                            <div class="text">
+                                <h3>Graffic design</h3>
+                                <p class="p2">lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam </p>
+                            </div>
+                            <!--end text div-->
+                        </div>
+                        <!--end about box content-->
+                        <div class="content fl-left">
+                            <!--start about box content-->
+                            <!--start icon div-->
+                            <div class="icon">
+                                <img src="images/marketing.png">
+                            </div>
+                            <!--end icon div-->
+                            <!--start text div-->
+                            <div class="text">
+                                <h3>Markting</h3>
+                                <p class="p2">lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam </p>
+                            </div>
+                            <!--end text div-->
+                        </div>
+                        <!--end about box content-->
+                        <div class="content fl-left">
+                            <!--start about box content-->
+                            <!--start icon div-->
+                            <div class="icon">
+                                <img src="images/earth2.png">
+                            </div>
+                            <!--end icon div-->
+                            <!--start text div-->
+                            <div class="text">
+                                <h3>SEO</h3>
+                                <p class="p2">lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam </p>
+                            </div>
+                            <!--end text div-->
+                        </div>
+                        <!--end about box content-->
+                        
+                    </div>    
+                </div>
+            </div>
+        </div>
+        
+        <!--end about me-->
+        <!--start my skills-->
+        
+        <div class="my-skills">
+            <div class="container">
+                <div class="skills fl-left">
+                    <h2>My Skills</h2>
+                    <p>lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. pute disputando cu est. te usu virtute placerat. pute disputando cu est. te usu virtute placerat. pute disputando cu est.</p>
+                    <p class="p2">lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. pute disputando cu est.pute disputando cu est. </p>
+                    <button class="my-button">Conact Me</button>
+                </div>
+                <div class="progress fl-left">
+                    <div class="tech">
+                        <h3>HTML/CSS</h3>
+                        <div>
+                            <span style="width: 83%">83% &nbsp;</span>
+                        </div>
+                    </div>
+                     <div class="tech">
+                        <h3>PHP/MYSQl</h3>
+                        <div>
+                            <span style="width: 88%">88% &nbsp;</span>
+                        </div>
+                    </div>
+                      <div class="tech">
+                        <h3>WORDPRESS</h3>
+                        <div>
+                            <span style="width: 90%">90% &nbsp;</span>
+                        </div>
+                    </div>
+                       <div class="tech">
+                        <h3>Graffic Design</h3>
+                        <div>
+                            <span style="width: 70%">70% &nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        
+        <!--end my skills-->
+        <!--start resume-->
+        
+        <div class="resume text-center">
+            <div class="container">
+                <h2>Resume</h2>
+                <p>lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. pute disputando cu est. pute disputando cu est. pute disputando cu est. pute disputando cu est. pute disputando cu est. pute disputando cu est. pute disputando cu est. pute disputando cu est.</p>
+                <button class="my-button">Download Resume</button>
+            </div>
+        </div>
+        
+        <!--end resume-->
+        <!--start my education-->
+        
+        <div class="my-education">
+            <div class="container">
+                <div class="main">
+                    <h2>My education</h2>
+                    <p>lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. pute disputando cu est. te usu virtute placerat. pute disputando cu est. te usu virtute placerat. pute disputando cu est.</p>
+                    <p class="p2">lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. pute disputando cu est.pute disputando cu est. </p>
+                </div>
+                <div class="exp">
+                    <div class="certificate">
+                        <h3>Graffic Design Diploma</h3>
+                        <span><span class="span2">Reeves college</span> /June 2008/May 2010</span>
+                        <span class="span3">4.0 GPA</span>
+                        <hr>
+                        <p>lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. pute disputando cu est. te usu virtute placerat. pute disputando cu est. te usu virtute placerat. pute disputando cu est.</p>
+                    </div>
+                    <div class="certificate">
+                        <h3>CIT Diploma</h3>
+                        <span><span class="span2">lithbridge college</span> /June 2006/May 2008</span>
+                        <span class="span3">4.0 GPA</span>
+                        <hr>
+                        <p>lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. pute disputando cu est. te usu virtute placerat. pute disputando cu est. te usu virtute placerat. pute disputando cu est.</p>
+                    </div>
+                </div>   
+                <div class="clearfix"></div>
+                <hr>
+                <div class="main">
+                    <h2>Work Experience</h2>
+                    <p>lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. pute disputando cu est. te usu virtute placerat. pute disputando cu est. te usu virtute placerat. pute disputando cu est.</p>
+                    <p class="p2">lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. pute disputando cu est.pute disputando cu est. </p>
+                </div>
+                <div class="exp">
+                    <div class="certificate">
+                        <h3>Lead Web Design</h3>
+                        <span><span class="span2">ABC company Egypt</span> /June 2008</span>
+                        <span class="span3">1 Year</span>
+                        <hr>
+                        <p>lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. pute disputando cu est. te usu virtute placerat. pute disputando cu est. te usu virtute placerat. pute disputando cu est.</p>
+                    </div>
+                    <div class="certificate">
+                        <h3>Junior Designer</h3>
+                        <span><span class="span2">CDE Company</span> May 2010</span>
+                        <span class="span3">1 Year</span>
+                        <hr>
+                        <p>lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. pute disputando cu est. te usu virtute placerat. pute disputando cu est. te usu virtute placerat. pute disputando cu est.</p>
+                    </div>
+                    <div class="certificate">
+                        <h3>Web Developer</h3>
+                        <span><span class="span2">My Company</span> May 2016</span>
+                        <span class="span3">2 Year</span>
+                        <hr>
+                        <p>lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. pute disputando cu est. te usu virtute placerat. pute disputando cu est. te usu virtute placerat. pute disputando cu est.</p>
+                    </div>
+                </div>   
+        </div>
+        
+        <!--end my education-->
+        <!--start testimonials-->
+        
+        <div class="testimonials text-center">
+            <div class="container">
+                <q>lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. pute disputando cu est.lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. pute disputando cu est.lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. pute disputando cu est.lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. pute disputando cu est.</q>
+                <h3>Omar.Gh</h3>
+                <ul class="text-center">
+                    <li></li>
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!--end testimonials-->
+        <!--strart portfolio-->
+        
+        <div class="portfolio text-center">
+            <div class="container">
+                <h2>portfolio</h2>
+                <p>lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. pute disputando cu est.pute disputando cu est.pute disputando cu est.pute disputando cu est.pute disputando cu est.pute disputando cu est.pute disputando cu est.pute disputando cu est.pute disputando cu est.</p>
+                <div class="our-work">
+                    <div><img src="images/1pr.jpg" alt=""></div>
+                    <div><img src="images/2pr.png" alt=""></div>
+                    <div><img src="images/3pr.jpg" alt=""></div>
+                    <div><img src="images/4pr.jpg" alt=""></div>
+                    <div><img src="images/5pr.jpg" alt=""></div>
+                    <div><img src="images/6pr.jpg" alt=""></div>
+                    <div><img src="images/7pr.jpg" alt=""></div>
+                    <div><img src="images/8pr.jpg" alt=""></div>
+                    <div><img src="images/9pr.png" alt=""></div>
+                </div>            
+            </div>
+        </div>
+        
+        <!--end portfolio-->
+        <!--start contactme-->
+        
+        <div class="contact">
+            <div class="container">
+                <div class="info fl-left">
+                    <h2>Contact Me</h2>
+                    <p>lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. pute disputando cu est.pute disputando cu est.pute disputando cu est.pute disputando cu est.pute disputando cu est.pute disputando cu est.</p>
+                    <p>
+                        123 Streat Name<br>
+                        6<sup>th </sup>October<br>
+                        sk Area
+                    </p>
+                    <p>
+                        <strong>Email:</strong> engomargh55@gmail.com<br>
+                        <strong>Phone:</strong> 01093462625
+                    </p>
+                </div>
+                <form class="form fl-left">
+                    <label>Name*</label>
+                    <input type="text">
+                    <label>Email Adress*</label>
+                    <input type="text">
+                    <label>Phone*</label>
+                    <input type="text">
+                    <label>Message*</label>
+                    <textarea></textarea>
+                    <input class="contact-me" type="submit"  value="Contact Me">
+
+                </form>
+            </div>
+        </div>
+        
+        <!--start contactme-->
+        <!--start footer-->
+        
+        <div class="footer text-center">
+            <div class="container">
+                <span>Copyright &copy; 2020 Omar Ghonaim Inc.</span>
+                <ul>
+                    <li><img src="images/whats.png" alt=""></li>
+                    <li><img src="images/facebook.png" alt=""></li>
+                    <li><img src="images/in.png" alt=""></li>
+                    <li><img src="images/gmail.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!--end footer-->
+
+</body>
+</html>
