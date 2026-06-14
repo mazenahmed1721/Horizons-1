@@ -2,7 +2,7 @@
 
 * This project visualizes the N-Queens problem using a recursive Backtracking algorithm.
 
-
+* Built as part of Hack Club Horizons.
 
 ** Languages **
 
